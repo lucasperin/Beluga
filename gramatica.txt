@@ -1,0 +1,174 @@
+Especificação da nossa Linguagem de Programação
+
+{
+
+programa={decl_classe}.
+
+decl_classe="classe" ident ["herda" ident ]corpo_classe.
+
+corpo_classe="{"{decl_classe}{(decl_var";")}{decl_construtor}{decl_metodo}"}".
+
+
+
+
+
+
+tipo=("inteiro"|"texto"|"cara_coroa"| ident ).
+
+decl_var=tipo ident {("[""]")}{("," ident {("[""]")})}.
+
+decl_construtor="construtor"corpo_metodo.
+
+decl_metodo=tipo{("[""]")} ident corpo_metodo.
+
+corpo_metodo="("lista_parametros")"comando.
+
+lista_parametros=tipo ident {("[""]")}[(","lista_parametros)].
+
+posicao_memoria= ident {"["expressao"]"|"." ident ["("lista_argumentos")"]}.
+
+termo=expressao_unaria{(("*"|"/"|"%")expressao_unaria)}.
+
+expressao_numero=termo{(("+"|"-")termo)}.
+
+expressao=expresssao_numero[("<"|">"|"<="|">="|"=="|"!="|"ou"|"e")expressao_numero].
+
+fator=("inteiro_constante"|"string_constante"|"cara_coroa_constante"|"nulo"|posicao_memoria|("("expressao")")).
+
+expressao_unaria=[("+"|"-")]fator.
+
+lista_argumentos=[expressao{(","expressao)}].
+
+alocar_expressao="novo"( ident "("lista_argumentos")")
+
+    |(("inteiro"|"string"| ident )("["expressao"]"){("["expressao"]")}).
+
+comando=((decl_var";")
+
+    |(comando_atribuicao";")
+
+    |(comando_imprimir";")
+
+    |(comando_ler";")|(comando_retorno";")
+
+    |(comando_super";")
+
+    |comando_se_entao
+
+    |comando_para
+
+    |comando_enquanto
+
+    |comando_trocar_caso
+
+    |("parar"";")
+
+    |("{"lista_comandos"}")
+
+    |";").
+
+lista_comandos=comando[lista_comandos].
+
+comando_atribuicao=posicao_memoria"="((expressao[condicional])|alocar_expressao).
+
+condicional="?"(expressao|alocar_expressao)":"(expressao|alocar_expressao).
+
+comando_imprimir="imprimir"expressao.
+
+comando_ler="ler"posicao_memoria.
+
+comando_retorno    ="retorno"[expressao].
+
+comando_super="super""("lista_argumentos")".
+
+comando_se_entao="se""("expressao")""entao"comando[("senao"comando)].
+
+comando_para="para""("[comando_atribuicao]";"[expressao]";"[comando_atribuicao]")"comando.
+
+comando_enquanto="enquanto""("expressao")"comando.
+
+comando_trocar_caso="trocar""("posicao_memoria")""{"lista_casos"}".
+
+lista_casos=caso[lista_casos]|"caso""padrao"":"comando.
+
+caso="caso"fator":"comando.
+
+ident= letra{(alfanumerico | "_") }.
+
+alfanumerico = { (letra|numero) }.
+
+letra= ("a"
+
+|"b"
+
+|"c"
+
+|"d"
+
+|"e"
+
+|"f"
+
+|"g"
+
+|"h"
+
+|"i"
+
+|"j"
+
+|"k"
+
+|"l"
+
+|"m"
+
+|"n"
+
+|"o"
+
+|"p"
+
+|"q"
+
+|"r"
+
+|"s"
+
+|"t"
+
+|"u"
+
+|"v"
+
+|"w"
+
+|"x"
+
+|"y"
+
+|"z").
+
+numero = ("1"
+
+|"2"
+
+|"3"
+
+|"4"
+
+|"5"
+
+|"6"
+
+|"7"
+
+|"8"
+
+|"9"
+
+|"0").
+
+}
+
+

@@ -1,0 +1,28 @@
+
+classe Ponto 
+{
+	variavel inteiro x_;
+	variavel inteiro y_;
+	
+
+	construtor(inteiro x, inteiro y)
+	{
+		x_ = x; 
+		y_ = y;
+	}
+
+	texto paraTexto()
+	{
+		retornar "ponto(" + x_ + ", " + y_ + ")";
+	}
+	
+	inteiro iniciar(){
+		
+		variavel texto i;
+		variavel Ponto p;
+		p = novo Ponto( 2, 1 );
+		i = p.paraTexto();
+		
+		imprimir i;
+	}
+}

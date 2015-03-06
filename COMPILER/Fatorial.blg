@@ -1,0 +1,42 @@
+classe Fatorial
+{
+	
+	inteiro calcular(inteiro x)
+	{
+		variavel inteiro resultado;
+		
+		se ( x == 0 ) entao {
+			retornar 1;
+		} senao {
+			variavel Fatorial fat;
+			fat = novo Fatorial();
+			resultado = x * fat.calcular(x-1);
+		}
+
+		retornar resultado;
+	}
+
+}
+
+classe Programa
+{
+	inteiro iniciar(){
+	
+		variavel inteiro resultado;
+		variavel Fatorial fat;
+		
+		imprimir "Digite um numero inteiro positivo: ";
+		ler resultado;
+		
+		se (resultado < 0) entao {
+			imprimir "Voce nao digitou um numero valido!\n";
+		} senao {
+			
+			fat = novo Fatorial();
+			resultado = fat.calcular(resultado);
+			imprimir "resultado = " + resultado + "\n";
+			
+		} 
+	}
+
+}

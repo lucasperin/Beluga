@@ -1,0 +1,152 @@
+
+	/* comentario
+	de 
+ 	multiplas
+	linhas
+	*/
+	// comentario de uma linha so
+
+classe Ponto 
+{
+	variavel inteiro x_;
+	variavel inteiro y_;
+	
+
+	construtor(inteiro x, inteiro y)
+	{
+		x_ = x; 
+		y_ = y;
+	}
+
+	vazio teste_imprimir()
+	{
+		imprimir "algo";
+	}
+}
+
+classe Circulo herda Ponto 
+{
+	variavel inteiro r_;
+	
+	construtor(inteiro r, inteiro x, inteiro y)
+	{
+		super(x, y);
+		r_ = r;
+	}
+
+	inteiro teste_imprimir()
+	{
+		imprimir r_;
+		retornar 1;
+	}
+}
+
+classe Teste
+{
+	variavel texto tipoString;
+	variavel cara_coroa tipoBoleano;
+	variavel inteiro tipoInt;
+	
+	variavel Ponto pontoNulo;
+	
+	construtor(){
+		pontoNulo = nulo;
+	}
+	
+	
+	vazio testeParaSemChave()
+	{
+		variavel inteiro i;
+		para ( i = 0; i < 10; i = i + 1)
+			imprimir "teste";
+	}
+
+	vazio testePara()
+	{
+		variavel inteiro i;
+		para ( i = 0; i < 10; i = i + 1)
+		{		
+			imprimir "teste";
+		}				
+	}
+
+	vazio testeEnquanto()
+	{
+		enquanto(coroa)
+		{
+			imprimir "teste";
+		}
+		
+		enquanto(1 > 2)
+		{
+			imprimir "teste" + 2 + 1;
+		}
+	}
+
+	vazio testeTrocar()
+	{
+		variavel inteiro i;
+		i = 2;
+		trocar(i)
+		{
+			caso 1:
+			{
+				imprimir "trocar caiu no caso errado";
+				parar;
+			}
+			caso 2:
+			{
+				imprimir "trocar caiu no caso correto";
+				parar;
+			}
+		}
+	}
+
+	vazio testeMetodoSemChave()
+		imprimir "metodo se chave!";
+
+	vazio testeSeEntao()
+	{
+		se (1== 1 ) entao
+		{
+			imprimir "comando se";
+			se (2 > 1) entao 
+			{
+				imprimir "se aninhado";
+			}
+		} senao {
+			imprimir "comando senao";
+		}
+
+	}
+
+	vazio testeAtribuicaoCondicional()
+	{
+		variavel Ponto p;
+		p = novo Ponto( 2, 1 );
+		variavel texto maior;
+		maior = (p.x_ > p.y_ ) ? "X e maior que Y" : "Y e maior que X";
+		imprimir maior;
+		imprimir "fim";
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

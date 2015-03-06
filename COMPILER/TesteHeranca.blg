@@ -1,0 +1,53 @@
+
+classe Ponto 
+{
+	variavel inteiro x_;
+	variavel inteiro y_;
+	
+
+	construtor(inteiro x, inteiro y)
+	{
+		x_ = x; 
+		y_ = y;
+	}
+
+	texto centro()
+	{
+		retornar "ponto(" + x_ + ", " + y_ + ")";
+	}
+	
+}
+
+classe Circulo herda Ponto
+{
+	variavel inteiro r_;
+	
+	construtor(inteiro x, inteiro y, inteiro r){
+		super(x, y);
+		r_ = r;
+	}
+	
+	inteiro area(){
+		retornar 3 * r_ * r_;
+	}
+
+}
+	
+classe Programa {
+	
+		inteiro iniciar(){
+		
+			variavel texto centro;
+			variavel Circulo c;
+			variavel inteiro area;
+
+			c = novo Circulo( 1, 1, 5 );
+			centro = c.centro();
+			area = c.area();
+			
+			imprimir "Centro da circunferencia = " + centro + 
+			"\nRaio da circunferencia = " + c.r_ +
+			"\nArea da circunferencia = " + area+ "m^2\n";
+		}	
+
+}

@@ -1,0 +1,776 @@
+X++ Compiler - Version 1.0 - 2004
+Reading from file GeradorPrimos.blg . . .
+Call:   program
+  Call:   classlist
+    Call:   classdecl
+      Consumed token: <"classe" at line 1 column 1>
+      Consumed token: <<IDENT>: "Gerador" at line 1 column 8>
+      Call:   classbody
+        Consumed token: <"{" at line 2 column 1>
+        Call:   methoddecl
+          Consumed token: <"inteiro" at line 4 column 9>
+          Consumed token: <<IDENT>: "calcular" at line 4 column 17>
+          Call:   methodbody
+            Consumed token: <"(" at line 4 column 25>
+            Call:   paramlist
+              Consumed token: <"inteiro" at line 4 column 26>
+              Consumed token: <<IDENT>: "x" at line 4 column 34>
+            Return: paramlist
+            Consumed token: <")" at line 4 column 35>
+            Call:   statement
+              Consumed token: <"{" at line 5 column 9>
+              Call:   statlist
+                Call:   statement
+                  Call:   vardecl
+                    Consumed token: <"variavel" at line 6 column 17>
+                    Consumed token: <"inteiro" at line 6 column 26>
+                    Consumed token: <<IDENT>: "resultado" at line 6 column 34>
+                  Return: vardecl
+                  Consumed token: <";" at line 6 column 43>
+                Return: statement
+                Call:   statlist
+                  Call:   statement
+                    Call:   vardecl
+                      Consumed token: <"variavel" at line 7 column 17>
+                      Consumed token: <"inteiro" at line 7 column 26>
+                      Consumed token: <<IDENT>: "aux" at line 7 column 34>
+                    Return: vardecl
+                    Consumed token: <";" at line 7 column 37>
+                  Return: statement
+                  Call:   statlist
+                    Call:   statement
+                      Call:   atribstat
+                        Call:   lvalue
+                          Consumed token: <<IDENT>: "resultado" at line 8 column 17>
+                        Return: lvalue
+                        Consumed token: <"=" at line 8 column 27>
+                        Call:   expression
+                          Call:   numexpr
+                            Call:   term
+                              Call:   unaryexpr
+                                Call:   factor
+                                  Consumed token: <<int_constant>: "0" at line 8 column 29>
+                                Return: factor
+                              Return: unaryexpr
+                            Return: term
+                          Return: numexpr
+                        Return: expression
+                      Return: atribstat
+                      Consumed token: <";" at line 8 column 30>
+                    Return: statement
+                    Call:   statlist
+                      Call:   statement
+                        Call:   atribstat
+                          Call:   lvalue
+                            Consumed token: <<IDENT>: "aux" at line 9 column 17>
+                          Return: lvalue
+                          Consumed token: <"=" at line 9 column 21>
+                          Call:   expression
+                            Call:   numexpr
+                              Call:   term
+                                Call:   unaryexpr
+                                  Call:   factor
+                                    Consumed token: <<int_constant>: "1" at line 9 column 23>
+                                  Return: factor
+                                Return: unaryexpr
+                              Return: term
+                            Return: numexpr
+                          Return: expression
+                        Return: atribstat
+                        Consumed token: <";" at line 9 column 24>
+                      Return: statement
+                      Call:   statlist
+                        Call:   statement
+                          Call:   whilestat
+                            Consumed token: <"enquanto" at line 11 column 17>
+                            Consumed token: <"(" at line 11 column 25>
+                            Call:   expression
+                              Call:   numexpr
+                                Call:   term
+                                  Call:   unaryexpr
+                                    Call:   factor
+                                      Call:   lvalue
+                                        Consumed token: <<IDENT>: "aux" at line 11 column 27>
+                                      Return: lvalue
+                                    Return: factor
+                                  Return: unaryexpr
+                                Return: term
+                              Return: numexpr
+                              Consumed token: <"<" at line 11 column 31>
+                              Call:   numexpr
+                                Call:   term
+                                  Call:   unaryexpr
+                                    Call:   factor
+                                      Call:   lvalue
+                                        Consumed token: <<IDENT>: "x" at line 11 column 33>
+                                      Return: lvalue
+                                    Return: factor
+                                  Return: unaryexpr
+                                Return: term
+                              Return: numexpr
+                            Return: expression
+                            Consumed token: <")" at line 11 column 35>
+                            Call:   statement
+                              Consumed token: <"{" at line 11 column 36>
+                              Call:   statlist
+                                Call:   statement
+                                  Call:   vardecl
+                                    Consumed token: <"variavel" at line 12 column 25>
+                                    Consumed token: <"inteiro" at line 12 column 34>
+                                    Consumed token: <<IDENT>: "i" at line 12 column 42>
+                                  Return: vardecl
+                                  Consumed token: <";" at line 12 column 43>
+                                Return: statement
+                                Call:   statlist
+                                  Call:   statement
+                                    Call:   vardecl
+                                      Consumed token: <"variavel" at line 13 column 25>
+                                      Consumed token: <"cara_coroa" at line 13 column 34>
+                                      Consumed token: <<IDENT>: "ehPrimo" at line 13 column 45>
+                                    Return: vardecl
+                                    Consumed token: <";" at line 13 column 52>
+                                  Return: statement
+                                  Call:   statlist
+                                    Call:   statement
+                                      Call:   vardecl
+                                        Consumed token: <"variavel" at line 14 column 25>
+                                        Consumed token: <"inteiro" at line 14 column 34>
+                                        Consumed token: <<IDENT>: "resto" at line 14 column 42>
+                                      Return: vardecl
+                                      Consumed token: <";" at line 14 column 47>
+                                    Return: statement
+                                    Call:   statlist
+                                      Call:   statement
+                                        Call:   atribstat
+                                          Call:   lvalue
+                                            Consumed token: <<IDENT>: "resto" at line 15 column 25>
+                                          Return: lvalue
+                                          Consumed token: <"=" at line 15 column 31>
+                                          Call:   expression
+                                            Call:   numexpr
+                                              Call:   term
+                                                Call:   unaryexpr
+                                                  Call:   factor
+                                                    Consumed token: <<int_constant>: "1" at line 15 column 33>
+                                                  Return: factor
+                                                Return: unaryexpr
+                                              Return: term
+                                            Return: numexpr
+                                          Return: expression
+                                        Return: atribstat
+                                        Consumed token: <";" at line 15 column 34>
+                                      Return: statement
+                                      Call:   statlist
+                                        Call:   statement
+                                          Call:   atribstat
+                                            Call:   lvalue
+                                              Consumed token: <<IDENT>: "ehPrimo" at line 17 column 25>
+                                            Return: lvalue
+                                            Consumed token: <"=" at line 17 column 33>
+                                            Call:   expression
+                                              Call:   numexpr
+                                                Call:   term
+                                                  Call:   unaryexpr
+                                                    Call:   factor
+                                                      Consumed token: <<boolean_constant>: "cara" at line 17 column 35>
+                                                    Return: factor
+                                                  Return: unaryexpr
+                                                Return: term
+                                              Return: numexpr
+                                            Return: expression
+                                          Return: atribstat
+                                          Consumed token: <";" at line 17 column 39>
+                                        Return: statement
+                                        Call:   statlist
+                                          Call:   statement
+                                            Call:   forstat
+                                              Consumed token: <"para" at line 18 column 25>
+                                              Consumed token: <"(" at line 18 column 30>
+                                              Call:   atribstat
+                                                Call:   lvalue
+                                                  Consumed token: <<IDENT>: "i" at line 18 column 32>
+                                                Return: lvalue
+                                                Consumed token: <"=" at line 18 column 34>
+                                                Call:   expression
+                                                  Call:   numexpr
+                                                    Call:   term
+                                                      Call:   unaryexpr
+                                                        Call:   factor
+                                                          Consumed token: <<int_constant>: "2" at line 18 column 36>
+                                                        Return: factor
+                                                      Return: unaryexpr
+                                                    Return: term
+                                                  Return: numexpr
+                                                Return: expression
+                                              Return: atribstat
+                                              Consumed token: <";" at line 18 column 37>
+                                              Call:   expression
+                                                Call:   numexpr
+                                                  Call:   term
+                                                    Call:   unaryexpr
+                                                      Call:   factor
+                                                        Call:   lvalue
+                                                          Consumed token: <<IDENT>: "i" at line 18 column 39>
+                                                        Return: lvalue
+                                                      Return: factor
+                                                    Return: unaryexpr
+                                                  Return: term
+                                                Return: numexpr
+                                                Consumed token: <"<" at line 18 column 41>
+                                                Call:   numexpr
+                                                  Call:   term
+                                                    Call:   unaryexpr
+                                                      Call:   factor
+                                                        Call:   lvalue
+                                                          Consumed token: <<IDENT>: "aux" at line 18 column 43>
+                                                        Return: lvalue
+                                                      Return: factor
+                                                    Return: unaryexpr
+                                                  Return: term
+                                                Return: numexpr
+                                              Return: expression
+                                              Consumed token: <";" at line 18 column 46>
+                                              Call:   atribstat
+                                                Call:   lvalue
+                                                  Consumed token: <<IDENT>: "i" at line 18 column 48>
+                                                Return: lvalue
+                                                Consumed token: <"=" at line 18 column 50>
+                                                Call:   expression
+                                                  Call:   numexpr
+                                                    Call:   term
+                                                      Call:   unaryexpr
+                                                        Call:   factor
+                                                          Call:   lvalue
+                                                            Consumed token: <<IDENT>: "i" at line 18 column 52>
+                                                          Return: lvalue
+                                                        Return: factor
+                                                      Return: unaryexpr
+                                                    Return: term
+                                                    Consumed token: <"+" at line 18 column 54>
+                                                    Call:   term
+                                                      Call:   unaryexpr
+                                                        Call:   factor
+                                                          Consumed token: <<int_constant>: "1" at line 18 column 56>
+                                                        Return: factor
+                                                      Return: unaryexpr
+                                                    Return: term
+                                                  Return: numexpr
+                                                Return: expression
+                                              Return: atribstat
+                                              Consumed token: <")" at line 18 column 57>
+                                              Call:   statement
+                                                Consumed token: <"{" at line 18 column 59>
+                                                Call:   statlist
+                                                  Call:   statement
+                                                    Call:   atribstat
+                                                      Call:   lvalue
+                                                        Consumed token: <<IDENT>: "resto" at line 19 column 33>
+                                                      Return: lvalue
+                                                      Consumed token: <"=" at line 19 column 39>
+                                                      Call:   expression
+                                                        Call:   numexpr
+                                                          Call:   term
+                                                            Call:   unaryexpr
+                                                              Call:   factor
+                                                                Call:   lvalue
+                                                                  Consumed token: <<IDENT>: "aux" at line 19 column 41>
+                                                                Return: lvalue
+                                                              Return: factor
+                                                            Return: unaryexpr
+                                                            Consumed token: <"%" at line 19 column 45>
+                                                            Call:   unaryexpr
+                                                              Call:   factor
+                                                                Call:   lvalue
+                                                                  Consumed token: <<IDENT>: "i" at line 19 column 47>
+                                                                Return: lvalue
+                                                              Return: factor
+                                                            Return: unaryexpr
+                                                          Return: term
+                                                        Return: numexpr
+                                                      Return: expression
+                                                    Return: atribstat
+                                                    Consumed token: <";" at line 19 column 48>
+                                                  Return: statement
+                                                  Call:   statlist
+                                                    Call:   statement
+                                                      Call:   ifstat
+                                                        Consumed token: <"se" at line 20 column 33>
+                                                        Consumed token: <"(" at line 20 column 36>
+                                                        Call:   expression
+                                                          Call:   numexpr
+                                                            Call:   term
+                                                              Call:   unaryexpr
+                                                                Call:   factor
+                                                                  Call:   lvalue
+                                                                    Consumed token: <<IDENT>: "resto" at line 20 column 38>
+                                                                  Return: lvalue
+                                                                Return: factor
+                                                              Return: unaryexpr
+                                                            Return: term
+                                                          Return: numexpr
+                                                          Consumed token: <"==" at line 20 column 44>
+                                                          Call:   numexpr
+                                                            Call:   term
+                                                              Call:   unaryexpr
+                                                                Call:   factor
+                                                                  Consumed token: <<int_constant>: "0" at line 20 column 47>
+                                                                Return: factor
+                                                              Return: unaryexpr
+                                                            Return: term
+                                                          Return: numexpr
+                                                        Return: expression
+                                                        Consumed token: <")" at line 20 column 49>
+                                                        Consumed token: <"entao" at line 20 column 51>
+                                                        Call:   statement
+                                                          Consumed token: <"{" at line 20 column 57>
+                                                          Call:   statlist
+                                                            Call:   statement
+                                                              Call:   atribstat
+                                                                Call:   lvalue
+                                                                  Consumed token: <<IDENT>: "ehPrimo" at line 21 column 41>
+                                                                Return: lvalue
+                                                                Consumed token: <"=" at line 21 column 49>
+                                                                Call:   expression
+                                                                  Call:   numexpr
+                                                                    Call:   term
+                                                                      Call:   unaryexpr
+                                                                        Call:   factor
+                                                                          Consumed token: <<boolean_constant>: "coroa" at line 21 column 51>
+                                                                        Return: factor
+                                                                      Return: unaryexpr
+                                                                    Return: term
+                                                                  Return: numexpr
+                                                                Return: expression
+                                                              Return: atribstat
+                                                              Consumed token: <";" at line 21 column 56>
+                                                            Return: statement
+                                                            Call:   statlist
+                                                              Call:   statement
+                                                                Consumed token: <"parar" at line 22 column 41>
+                                                                Consumed token: <";" at line 22 column 46>
+                                                              Return: statement
+                                                            Return: statlist
+                                                          Return: statlist
+                                                          Consumed token: <"}" at line 23 column 33>
+                                                        Return: statement
+                                                      Return: ifstat
+                                                    Return: statement
+                                                  Return: statlist
+                                                Return: statlist
+                                                Consumed token: <"}" at line 24 column 25>
+                                              Return: statement
+                                            Return: forstat
+                                          Return: statement
+                                          Call:   statlist
+                                            Call:   statement
+                                              Call:   ifstat
+                                                Consumed token: <"se" at line 25 column 25>
+                                                Consumed token: <"(" at line 25 column 28>
+                                                Call:   expression
+                                                  Call:   numexpr
+                                                    Call:   term
+                                                      Call:   unaryexpr
+                                                        Call:   factor
+                                                          Call:   lvalue
+                                                            Consumed token: <<IDENT>: "ehPrimo" at line 25 column 29>
+                                                          Return: lvalue
+                                                        Return: factor
+                                                      Return: unaryexpr
+                                                    Return: term
+                                                  Return: numexpr
+                                                  Consumed token: <"==" at line 25 column 37>
+                                                  Call:   numexpr
+                                                    Call:   term
+                                                      Call:   unaryexpr
+                                                        Call:   factor
+                                                          Consumed token: <<boolean_constant>: "cara" at line 25 column 40>
+                                                        Return: factor
+                                                      Return: unaryexpr
+                                                    Return: term
+                                                  Return: numexpr
+                                                Return: expression
+                                                Consumed token: <")" at line 25 column 44>
+                                                Consumed token: <"entao" at line 25 column 46>
+                                                Call:   statement
+                                                  Consumed token: <"{" at line 25 column 52>
+                                                  Call:   statlist
+                                                    Call:   statement
+                                                      Call:   atribstat
+                                                        Call:   lvalue
+                                                          Consumed token: <<IDENT>: "resultado" at line 26 column 33>
+                                                        Return: lvalue
+                                                        Consumed token: <"=" at line 26 column 43>
+                                                        Call:   expression
+                                                          Call:   numexpr
+                                                            Call:   term
+                                                              Call:   unaryexpr
+                                                                Call:   factor
+                                                                  Call:   lvalue
+                                                                    Consumed token: <<IDENT>: "resultado" at line 26 column 45>
+                                                                  Return: lvalue
+                                                                Return: factor
+                                                              Return: unaryexpr
+                                                            Return: term
+                                                            Consumed token: <"+" at line 26 column 55>
+                                                            Call:   term
+                                                              Call:   unaryexpr
+                                                                Call:   factor
+                                                                  Consumed token: <<int_constant>: "1" at line 26 column 56>
+                                                                Return: factor
+                                                              Return: unaryexpr
+                                                            Return: term
+                                                          Return: numexpr
+                                                        Return: expression
+                                                      Return: atribstat
+                                                      Consumed token: <";" at line 26 column 57>
+                                                    Return: statement
+                                                    Call:   statlist
+                                                      Call:   statement
+                                                        Call:   printstat
+                                                          Consumed token: <"imprimir" at line 27 column 33>
+                                                          Call:   expression
+                                                            Call:   numexpr
+                                                              Call:   term
+                                                                Call:   unaryexpr
+                                                                  Call:   factor
+                                                                    Call:   lvalue
+                                                                      Consumed token: <<IDENT>: "aux" at line 27 column 42>
+                                                                    Return: lvalue
+                                                                  Return: factor
+                                                                Return: unaryexpr
+                                                              Return: term
+                                                              Consumed token: <"+" at line 27 column 46>
+                                                              Call:   term
+                                                                Call:   unaryexpr
+                                                                  Call:   factor
+                                                                    Consumed token: <<string_constant>: ""\n"" at line 27 column 48>
+                                                                  Return: factor
+                                                                Return: unaryexpr
+                                                              Return: term
+                                                            Return: numexpr
+                                                          Return: expression
+                                                        Return: printstat
+                                                        Consumed token: <";" at line 27 column 52>
+                                                      Return: statement
+                                                    Return: statlist
+                                                  Return: statlist
+                                                  Consumed token: <"}" at line 28 column 25>
+                                                Return: statement
+                                              Return: ifstat
+                                            Return: statement
+                                            Call:   statlist
+                                              Call:   statement
+                                                Call:   atribstat
+                                                  Call:   lvalue
+                                                    Consumed token: <<IDENT>: "aux" at line 29 column 25>
+                                                  Return: lvalue
+                                                  Consumed token: <"=" at line 29 column 29>
+                                                  Call:   expression
+                                                    Call:   numexpr
+                                                      Call:   term
+                                                        Call:   unaryexpr
+                                                          Call:   factor
+                                                            Call:   lvalue
+                                                              Consumed token: <<IDENT>: "aux" at line 29 column 31>
+                                                            Return: lvalue
+                                                          Return: factor
+                                                        Return: unaryexpr
+                                                      Return: term
+                                                      Consumed token: <"+" at line 29 column 35>
+                                                      Call:   term
+                                                        Call:   unaryexpr
+                                                          Call:   factor
+                                                            Consumed token: <<int_constant>: "1" at line 29 column 36>
+                                                          Return: factor
+                                                        Return: unaryexpr
+                                                      Return: term
+                                                    Return: numexpr
+                                                  Return: expression
+                                                Return: atribstat
+                                                Consumed token: <";" at line 29 column 37>
+                                              Return: statement
+                                            Return: statlist
+                                          Return: statlist
+                                        Return: statlist
+                                      Return: statlist
+                                    Return: statlist
+                                  Return: statlist
+                                Return: statlist
+                              Return: statlist
+                              Consumed token: <"}" at line 30 column 17>
+                            Return: statement
+                          Return: whilestat
+                        Return: statement
+                        Call:   statlist
+                          Call:   statement
+                            Call:   returnstat
+                              Consumed token: <"retornar" at line 31 column 17>
+                              Call:   expression
+                                Call:   numexpr
+                                  Call:   term
+                                    Call:   unaryexpr
+                                      Call:   factor
+                                        Call:   lvalue
+                                          Consumed token: <<IDENT>: "resultado" at line 31 column 26>
+                                        Return: lvalue
+                                      Return: factor
+                                    Return: unaryexpr
+                                  Return: term
+                                Return: numexpr
+                              Return: expression
+                            Return: returnstat
+                            Consumed token: <";" at line 31 column 35>
+                          Return: statement
+                        Return: statlist
+                      Return: statlist
+                    Return: statlist
+                  Return: statlist
+                Return: statlist
+              Return: statlist
+              Consumed token: <"}" at line 32 column 9>
+            Return: statement
+          Return: methodbody
+        Return: methoddecl
+        Consumed token: <"}" at line 34 column 1>
+      Return: classbody
+    Return: classdecl
+    Call:   classlist
+      Call:   classdecl
+        Consumed token: <"classe" at line 36 column 1>
+        Consumed token: <<IDENT>: "Programa" at line 36 column 8>
+        Call:   classbody
+          Consumed token: <"{" at line 37 column 1>
+          Call:   methoddecl
+            Consumed token: <"inteiro" at line 38 column 9>
+            Consumed token: <<IDENT>: "iniciar" at line 38 column 17>
+            Call:   methodbody
+              Consumed token: <"(" at line 38 column 24>
+              Call:   paramlist
+              Return: paramlist
+              Consumed token: <")" at line 38 column 25>
+              Call:   statement
+                Consumed token: <"{" at line 38 column 26>
+                Call:   statlist
+                  Call:   statement
+                    Call:   vardecl
+                      Consumed token: <"variavel" at line 40 column 17>
+                      Consumed token: <"inteiro" at line 40 column 26>
+                      Consumed token: <<IDENT>: "resultado" at line 40 column 34>
+                    Return: vardecl
+                    Consumed token: <";" at line 40 column 43>
+                  Return: statement
+                  Call:   statlist
+                    Call:   statement
+                      Call:   vardecl
+                        Consumed token: <"variavel" at line 41 column 17>
+                        Consumed token: <<IDENT>: "Gerador" at line 41 column 26>
+                        Consumed token: <<IDENT>: "gerador" at line 41 column 34>
+                      Return: vardecl
+                      Consumed token: <";" at line 41 column 41>
+                    Return: statement
+                    Call:   statlist
+                      Call:   statement
+                        Call:   printstat
+                          Consumed token: <"imprimir" at line 43 column 17>
+                          Call:   expression
+                            Call:   numexpr
+                              Call:   term
+                                Call:   unaryexpr
+                                  Call:   factor
+                                    Consumed token: <<string_constant>: ""Digite um numero inteiro positivo: "" at line 43 column 26>
+                                  Return: factor
+                                Return: unaryexpr
+                              Return: term
+                            Return: numexpr
+                          Return: expression
+                        Return: printstat
+                        Consumed token: <";" at line 43 column 63>
+                      Return: statement
+                      Call:   statlist
+                        Call:   statement
+                          Call:   readstat
+                            Consumed token: <"ler" at line 44 column 17>
+                            Call:   lvalue
+                              Consumed token: <<IDENT>: "resultado" at line 44 column 21>
+                            Return: lvalue
+                          Return: readstat
+                          Consumed token: <";" at line 44 column 30>
+                        Return: statement
+                        Call:   statlist
+                          Call:   statement
+                            Call:   ifstat
+                              Consumed token: <"se" at line 46 column 17>
+                              Consumed token: <"(" at line 46 column 20>
+                              Call:   expression
+                                Call:   numexpr
+                                  Call:   term
+                                    Call:   unaryexpr
+                                      Call:   factor
+                                        Call:   lvalue
+                                          Consumed token: <<IDENT>: "resultado" at line 46 column 21>
+                                        Return: lvalue
+                                      Return: factor
+                                    Return: unaryexpr
+                                  Return: term
+                                Return: numexpr
+                                Consumed token: <"<" at line 46 column 31>
+                                Call:   numexpr
+                                  Call:   term
+                                    Call:   unaryexpr
+                                      Call:   factor
+                                        Consumed token: <<int_constant>: "0" at line 46 column 33>
+                                      Return: factor
+                                    Return: unaryexpr
+                                  Return: term
+                                Return: numexpr
+                              Return: expression
+                              Consumed token: <")" at line 46 column 34>
+                              Consumed token: <"entao" at line 46 column 36>
+                              Call:   statement
+                                Consumed token: <"{" at line 46 column 42>
+                                Call:   statlist
+                                  Call:   statement
+                                    Call:   printstat
+                                      Consumed token: <"imprimir" at line 47 column 25>
+                                      Call:   expression
+                                        Call:   numexpr
+                                          Call:   term
+                                            Call:   unaryexpr
+                                              Call:   factor
+                                                Consumed token: <<string_constant>: ""Você não digitou um numero valido!\n"" at line 47 column 34>
+                                              Return: factor
+                                            Return: unaryexpr
+                                          Return: term
+                                        Return: numexpr
+                                      Return: expression
+                                    Return: printstat
+                                    Consumed token: <";" at line 47 column 72>
+                                  Return: statement
+                                Return: statlist
+                                Consumed token: <"}" at line 48 column 17>
+                              Return: statement
+                              Consumed token: <"senao" at line 48 column 19>
+                              Call:   statement
+                                Consumed token: <"{" at line 48 column 25>
+                                Call:   statlist
+                                  Call:   statement
+                                    Call:   atribstat
+                                      Call:   lvalue
+                                        Consumed token: <<IDENT>: "gerador" at line 50 column 25>
+                                      Return: lvalue
+                                      Consumed token: <"=" at line 50 column 33>
+                                      Call:   alocexpression
+                                        Consumed token: <"novo" at line 50 column 35>
+                                        Visited token: <<IDENT>: "Gerador" at line 50 column 40>; Expected token: <<IDENT>>
+                                        Visited token: <"(" at line 50 column 47>; Expected token: <"(">
+                                        Consumed token: <<IDENT>: "Gerador" at line 50 column 40>
+                                        Consumed token: <"(" at line 50 column 47>
+                                        Call:   arglist
+                                        Return: arglist
+                                        Consumed token: <")" at line 50 column 48>
+                                      Return: alocexpression
+                                    Return: atribstat
+                                    Consumed token: <";" at line 50 column 49>
+                                  Return: statement
+                                  Call:   statlist
+                                    Call:   statement
+                                      Call:   atribstat
+                                        Call:   lvalue
+                                          Consumed token: <<IDENT>: "resultado" at line 51 column 25>
+                                        Return: lvalue
+                                        Consumed token: <"=" at line 51 column 35>
+                                        Call:   expression
+                                          Call:   numexpr
+                                            Call:   term
+                                              Call:   unaryexpr
+                                                Call:   factor
+                                                  Call:   lvalue
+                                                    Consumed token: <<IDENT>: "gerador" at line 51 column 37>
+                                                    Visited token: <"." at line 51 column 44>; Expected token: <".">
+                                                    Visited token: <<IDENT>: "calcular" at line 51 column 45>; Expected token: <<IDENT>>
+                                                    Visited token: <"(" at line 51 column 53>; Expected token: <"(">
+                                                    Consumed token: <"." at line 51 column 44>
+                                                    Consumed token: <<IDENT>: "calcular" at line 51 column 45>
+                                                    Consumed token: <"(" at line 51 column 53>
+                                                    Call:   arglist
+                                                      Call:   expression
+                                                        Call:   numexpr
+                                                          Call:   term
+                                                            Call:   unaryexpr
+                                                              Call:   factor
+                                                                Call:   lvalue
+                                                                  Consumed token: <<IDENT>: "resultado" at line 51 column 54>
+                                                                Return: lvalue
+                                                              Return: factor
+                                                            Return: unaryexpr
+                                                          Return: term
+                                                        Return: numexpr
+                                                      Return: expression
+                                                    Return: arglist
+                                                    Consumed token: <")" at line 51 column 63>
+                                                  Return: lvalue
+                                                Return: factor
+                                              Return: unaryexpr
+                                            Return: term
+                                          Return: numexpr
+                                        Return: expression
+                                      Return: atribstat
+                                      Consumed token: <";" at line 51 column 64>
+                                    Return: statement
+                                    Call:   statlist
+                                      Call:   statement
+                                        Call:   printstat
+                                          Consumed token: <"imprimir" at line 52 column 25>
+                                          Call:   expression
+                                            Call:   numexpr
+                                              Call:   term
+                                                Call:   unaryexpr
+                                                  Call:   factor
+                                                    Call:   lvalue
+                                                      Consumed token: <<IDENT>: "resultado" at line 52 column 34>
+                                                    Return: lvalue
+                                                  Return: factor
+                                                Return: unaryexpr
+                                              Return: term
+                                              Consumed token: <"+" at line 52 column 44>
+                                              Call:   term
+                                                Call:   unaryexpr
+                                                  Call:   factor
+                                                    Consumed token: <<string_constant>: "" numeros primos encontrados.\n"" at line 52 column 46>
+                                                  Return: factor
+                                                Return: unaryexpr
+                                              Return: term
+                                            Return: numexpr
+                                          Return: expression
+                                        Return: printstat
+                                        Consumed token: <";" at line 52 column 78>
+                                      Return: statement
+                                    Return: statlist
+                                  Return: statlist
+                                Return: statlist
+                                Consumed token: <"}" at line 54 column 17>
+                              Return: statement
+                            Return: ifstat
+                          Return: statement
+                        Return: statlist
+                      Return: statlist
+                    Return: statlist
+                  Return: statlist
+                Return: statlist
+                Consumed token: <"}" at line 55 column 9>
+              Return: statement
+            Return: methodbody
+          Return: methoddecl
+          Consumed token: <"}" at line 57 column 1>
+        Return: classbody
+      Return: classdecl
+    Return: classlist
+  Return: classlist
+  Consumed token: <<EOF> at line 57 column 1>
+Return: program
+0 Lexical Errors found
+0 Syntactic Errors found
+0 Semantic error found
+Generating GeradorPrimos.blg.Gerador.jas
+Generating GeradorPrimos.blg.Programa.jas
+Code generated

@@ -1,0 +1,35 @@
+X++ Compiler - Version 1.0 - 2004
+Reading from file TesteComErro2.blg . . .
+
+*** methoddecl ***
+     Syncronizing Set: inteiro texto classe 
+     Ignoring token: (
+     Ignoring token: )
+     Ignoring token: {
+     Ignoring token: imprimir
+     Ignoring token: <string_constant>
+     Ignoring token: +
+     Ignoring token: <IDENT>
+     Ignoring token: +
+     Ignoring token: <string_constant>
+     Ignoring token: +
+     Ignoring token: <IDENT>
+     Ignoring token: +
+     Ignoring token: <string_constant>
+     Ignoring token: +
+     Ignoring token: <IDENT>
+     Ignoring token: ;
+     Ignoring token: }
+     Ignoring token: }
+     Found syncronizing token: classe
+Encountered " "(" "( "" at line 36, column 23.
+Was expecting one of:
+    <IDENT> ...
+    "[" ...
+    
+
+*** classbody ***
+     Syncronizing Set: classe 
+     Found syncronizing token: classe
+0 Lexical Errors found
+1 Syntactic Errors found

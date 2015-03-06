@@ -1,0 +1,273 @@
+Beluga Compiler - Version 1.0 - 2013
+Lendo do arquivo TesteComErro2.blg . . .
+Call:   program
+  Call:   classlist
+    Call:   classdecl
+      Consumed token: <"classe" at line 9 column 1>
+      Consumed token: <<IDENT>: "Ponto" at line 9 column 8>
+      Call:   classbody
+        Consumed token: <"{" at line 10 column 1>
+        Call:   vardecl
+          Consumed token: <"variavel" at line 11 column 9>
+          Consumed token: <"inteiro" at line 11 column 18>
+          Consumed token: <<IDENT>: "x_" at line 11 column 26>
+        Return: vardecl
+        Consumed token: <";" at line 11 column 28>
+        Call:   vardecl
+          Consumed token: <"variavel" at line 12 column 9>
+          Consumed token: <"inteiro" at line 12 column 18>
+          Consumed token: <<IDENT>: "y_" at line 12 column 26>
+        Return: vardecl
+        Consumed token: <";" at line 12 column 28>
+        Call:   constructdecl
+          Consumed token: <"construtor" at line 14 column 9>
+          Call:   methodbody
+            Consumed token: <"(" at line 14 column 19>
+            Call:   paramlist
+              Consumed token: <"inteiro" at line 14 column 20>
+              Consumed token: <<IDENT>: "x" at line 14 column 28>
+              Consumed token: <"," at line 14 column 29>
+              Call:   paramlist
+                Consumed token: <"inteiro" at line 14 column 31>
+                Consumed token: <<IDENT>: "y" at line 14 column 39>
+              Return: paramlist
+            Return: paramlist
+            Consumed token: <")" at line 14 column 40>
+            Call:   statement
+              Consumed token: <"{" at line 15 column 9>
+              Call:   statlist
+                Call:   statement
+                  Call:   atribstat
+                    Call:   lvalue
+                      Consumed token: <<IDENT>: "x_" at line 16 column 17>
+                    Return: lvalue
+                    Consumed token: <"=" at line 16 column 20>
+                    Call:   expression
+                      Call:   numexpr
+                        Call:   term
+                          Call:   unaryexpr
+                            Call:   factor
+                              Call:   lvalue
+                                Consumed token: <<IDENT>: "x" at line 16 column 22>
+                              Return: lvalue
+                            Return: factor
+                          Return: unaryexpr
+                        Return: term
+                      Return: numexpr
+                    Return: expression
+                  Return: atribstat
+                  Consumed token: <";" at line 16 column 23>
+                Return: statement
+                Call:   statlist
+                  Call:   statement
+                    Call:   atribstat
+                      Call:   lvalue
+                        Consumed token: <<IDENT>: "y_" at line 17 column 17>
+                      Return: lvalue
+                      Consumed token: <"=" at line 17 column 20>
+                      Call:   expression
+                        Call:   numexpr
+                          Call:   term
+                            Call:   unaryexpr
+                              Call:   factor
+                                Call:   lvalue
+                                  Consumed token: <<IDENT>: "y" at line 17 column 22>
+                                Return: lvalue
+                              Return: factor
+                            Return: unaryexpr
+                          Return: term
+                        Return: numexpr
+                      Return: expression
+                    Return: atribstat
+                    Consumed token: <";" at line 17 column 23>
+                  Return: statement
+                Return: statlist
+              Return: statlist
+              Consumed token: <"}" at line 18 column 9>
+            Return: statement
+          Return: methodbody
+        Return: constructdecl
+        Call:   methoddecl
+          Consumed token: <"vazio" at line 20 column 9>
+          Consumed token: <<IDENT>: "teste_imprimir" at line 20 column 15>
+          Call:   methodbody
+            Consumed token: <"(" at line 20 column 29>
+            Call:   paramlist
+            Return: paramlist
+            Consumed token: <")" at line 20 column 30>
+            Call:   statement
+              Consumed token: <"{" at line 21 column 9>
+              Call:   statlist
+                Call:   statement
+                  Call:   printstat
+                    Consumed token: <"imprimir" at line 22 column 17>
+                    Call:   expression
+                      Call:   numexpr
+                        Call:   term
+                          Call:   unaryexpr
+                            Call:   factor
+                              Consumed token: <<string_constant>: ""("" at line 22 column 26>
+                            Return: factor
+                          Return: unaryexpr
+                        Return: term
+                        Consumed token: <"+" at line 22 column 30>
+                        Call:   term
+                          Call:   unaryexpr
+                            Call:   factor
+                              Call:   lvalue
+                                Consumed token: <<IDENT>: "x_" at line 22 column 32>
+                              Return: lvalue
+                            Return: factor
+                          Return: unaryexpr
+                        Return: term
+                        Consumed token: <"+" at line 22 column 35>
+                        Call:   term
+                          Call:   unaryexpr
+                            Call:   factor
+                              Consumed token: <<string_constant>: "","" at line 22 column 37>
+                            Return: factor
+                          Return: unaryexpr
+                        Return: term
+                        Consumed token: <"+" at line 22 column 41>
+                        Call:   term
+                          Call:   unaryexpr
+                            Call:   factor
+                              Call:   lvalue
+                                Consumed token: <<IDENT>: "y_" at line 22 column 43>
+                              Return: lvalue
+                            Return: factor
+                          Return: unaryexpr
+                        Return: term
+                        Consumed token: <"+" at line 22 column 46>
+                        Call:   term
+                          Call:   unaryexpr
+                            Call:   factor
+                              Consumed token: <<string_constant>: "")"" at line 22 column 48>
+                            Return: factor
+                          Return: unaryexpr
+                        Return: term
+                      Return: numexpr
+                    Return: expression
+                  Return: printstat
+                  Consumed token: <";" at line 22 column 51>
+                Return: statement
+              Return: statlist
+              Consumed token: <"}" at line 23 column 9>
+            Return: statement
+          Return: methodbody
+        Return: methoddecl
+        Consumed token: <"}" at line 24 column 1>
+      Return: classbody
+    Return: classdecl
+    Call:   classlist
+      Call:   classdecl
+        Consumed token: <"classe" at line 26 column 1>
+        Consumed token: <<IDENT>: "Circulo" at line 26 column 8>
+        Consumed token: <"herda" at line 26 column 16>
+        Consumed token: <<IDENT>: "Ponto" at line 26 column 22>
+        Call:   classbody
+          Consumed token: <"{" at line 27 column 1>
+          Call:   vardecl
+            Consumed token: <"variavel" at line 28 column 9>
+            Consumed token: <"inteiro" at line 28 column 18>
+            Consumed token: <<IDENT>: "r_" at line 28 column 26>
+          Return: vardecl
+          Consumed token: <";" at line 28 column 28>
+          Call:   constructdecl
+            Consumed token: <"construtor" at line 30 column 9>
+            Call:   methodbody
+              Consumed token: <"(" at line 30 column 19>
+              Call:   paramlist
+                Consumed token: <"inteiro" at line 30 column 20>
+                Consumed token: <<IDENT>: "r" at line 30 column 28>
+                Consumed token: <"," at line 30 column 29>
+                Call:   paramlist
+                  Consumed token: <"inteiro" at line 30 column 31>
+                  Consumed token: <<IDENT>: "x" at line 30 column 39>
+                  Consumed token: <"," at line 30 column 40>
+                  Call:   paramlist
+                    Consumed token: <"inteiro" at line 30 column 42>
+                    Consumed token: <<IDENT>: "y" at line 30 column 50>
+                  Return: paramlist
+                Return: paramlist
+              Return: paramlist
+              Consumed token: <")" at line 30 column 51>
+              Call:   statement
+                Consumed token: <"{" at line 31 column 9>
+                Call:   statlist
+                  Call:   statement
+                    Call:   superstat
+                      Consumed token: <"super" at line 32 column 17>
+                      Consumed token: <"(" at line 32 column 22>
+                      Call:   arglist
+                        Call:   expression
+                          Call:   numexpr
+                            Call:   term
+                              Call:   unaryexpr
+                                Call:   factor
+                                  Call:   lvalue
+                                    Consumed token: <<IDENT>: "x" at line 32 column 23>
+                                  Return: lvalue
+                                Return: factor
+                              Return: unaryexpr
+                            Return: term
+                          Return: numexpr
+                        Return: expression
+                        Consumed token: <"," at line 32 column 24>
+                        Call:   expression
+                          Call:   numexpr
+                            Call:   term
+                              Call:   unaryexpr
+                                Call:   factor
+                                  Call:   lvalue
+                                    Consumed token: <<IDENT>: "y" at line 32 column 26>
+                                  Return: lvalue
+                                Return: factor
+                              Return: unaryexpr
+                            Return: term
+                          Return: numexpr
+                        Return: expression
+                      Return: arglist
+                      Consumed token: <")" at line 32 column 27>
+                    Return: superstat
+                    Consumed token: <";" at line 32 column 28>
+                  Return: statement
+                  Call:   statlist
+                    Call:   statement
+                      Call:   atribstat
+                        Call:   lvalue
+                          Consumed token: <<IDENT>: "r_" at line 33 column 17>
+                        Return: lvalue
+                        Consumed token: <"=" at line 33 column 20>
+                        Call:   expression
+                          Call:   numexpr
+                            Call:   term
+                              Call:   unaryexpr
+                                Call:   factor
+                                  Call:   lvalue
+                                    Consumed token: <<IDENT>: "r" at line 33 column 22>
+                                  Return: lvalue
+                                Return: factor
+                              Return: unaryexpr
+                            Return: term
+                          Return: numexpr
+                        Return: expression
+                      Return: atribstat
+                      Consumed token: <";" at line 33 column 23>
+                    Return: statement
+                  Return: statlist
+                Return: statlist
+                Consumed token: <"}" at line 34 column 9>
+              Return: statement
+            Return: methodbody
+          Return: constructdecl
+          Call:   methoddecl
+            Consumed token: <<IDENT>: "teste_imprimir" at line 36 column 9>
+          Return: methoddecl
+        Return: classbody
+      Return: classdecl
+    Return: classlist
+  Return: classlist
+Return: program
+0 Erros lexicos encontrados
+1 Erros sintaticos encontrados

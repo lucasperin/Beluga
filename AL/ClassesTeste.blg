@@ -1,0 +1,129 @@
+
+	/* comentario
+	de 
+ 	multiplas
+	linhas
+	*/
+	// comentario de uma linha so
+
+classe Ponto 
+{
+	inteiro x_;
+	inteiro y_;
+
+	construtor(inteiro x, inteiro y)
+	{
+		x_ = x; 
+		y_ = y;
+	}
+
+	imprimir()
+	{
+		imprimir "(" + x_ + "," + y_ + ")";
+	}
+}
+
+classe Circulo herda Ponto 
+{
+	inteiro r_;
+	
+	construtor(inteiro r, inteiro x, inteiro y)
+	{
+		super construtor(x, y);
+		r_ = r;
+	}
+
+	imprimir()
+	{
+		imprimir "(" + x_ + "," + y_ + ") com raio " + r_;
+	}
+}
+
+classe Teste
+{
+	texto tipoString;
+	cara_coroa tipoBoleano;
+	inteiro tipoInt;
+
+	testeParaSemChave()
+	{
+		para ( inteiro i = 0; i < 10; i = i + 1)
+			imprimir "teste";
+	}
+
+	testePara()
+	{
+		para ( inteiro i = 0; i < 10; i = i + 1)
+		{		
+			imprimir "teste";
+		}				
+	}
+
+	testeEnquando()
+	{
+		enquanto(cara)
+		{
+			imprimir "teste";
+		}
+	}
+
+	testeTrocar()
+	{
+		inteiro i;
+		i = 2;
+		trocar(i)
+		{
+		caso 1:
+			imprimir "trocar caiu no caso errado";
+			parar;
+		caso 2:
+			imprimir "trocar caiu no caso correto";
+			parar;
+		}
+	}
+
+	testeMetodoSemChave()
+		imprimir "metodo se chave!";
+
+	testeSeEntao()
+	{
+		se (1==1) entao
+		{
+			imprimir "comando se";
+			se (2 > 1) entao 
+			{
+				imprimir "se aninhado";
+			}
+		} senao {
+			imprimir "comando senao";
+		}
+
+	}
+
+	testeAtribuicaoCondicional()
+	{
+		Ponto p = new Ponto( 2, 1 );
+		texto maior = (p.x > p.y ) ? "X e maior que Y" : "Y e maior que X";
+		imprimir texto;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

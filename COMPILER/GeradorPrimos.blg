@@ -1,0 +1,56 @@
+classe Gerador
+{
+	inteiro calcular(inteiro x)
+	{
+		variavel inteiro resultado;
+		variavel inteiro aux;
+		resultado = 0;
+		aux = 1;
+		
+		enquanto( aux < x ){
+			variavel inteiro i;
+			variavel cara_coroa ehPrimo;
+			variavel inteiro resto;
+			resto = 1;
+			
+			ehPrimo = cara;
+			para ( i = 2; i < aux; i = i + 1) {
+				resto = aux % i;
+				se ( resto == 0 ) entao {
+					ehPrimo = coroa;
+					parar;
+				}
+			}
+			se (ehPrimo == cara) entao {
+				resultado = resultado +1;
+				imprimir aux + "\n";
+			}
+			aux = aux +1;
+		}
+		retornar resultado;
+	}
+
+}
+
+classe Programa
+{
+	inteiro iniciar(){
+	
+		variavel inteiro resultado;
+		variavel Gerador gerador;
+		
+		imprimir "Digite um numero inteiro positivo: ";
+		ler resultado;
+		
+		se (resultado < 0) entao {
+			imprimir "Você não digitou um numero valido!\n";
+		} senao {
+			
+			gerador = novo Gerador();
+			resultado = gerador.calcular(resultado);
+			imprimir resultado + " numeros primos encontrados.\n";
+			
+		} 
+	}
+
+}

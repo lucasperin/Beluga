@@ -1,0 +1,21 @@
+Beluga Compiler - Version 1.0 - 2013
+Lendo do arquivo TesteComErro1.blg . . .
+Call:   program
+  Call:   classlist
+    Call:   classdecl
+      Consumed token: <"classe" at line 9 column 1>
+      Consumed token: <<IDENT>: "Ponto" at line 9 column 8>
+      Call:   classbody
+        Consumed token: <"{" at line 10 column 1>
+        Call:   methoddecl
+          Consumed token: <"inteiro" at line 11 column 9>
+          Consumed token: <<IDENT>: "x_" at line 11 column 17>
+          Call:   methodbody
+          Return: methodbody
+        Return: methoddecl
+      Return: classbody
+    Return: classdecl
+  Return: classlist
+Return: program
+0 Erros lexicos encontrados
+1 Erros sintaticos encontrados

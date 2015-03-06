@@ -1,0 +1,75 @@
+X++ Compiler - Version 1.0 - 2004
+Reading from file TesteComErro1.blg . . .
+
+*** methodbody ***
+     Syncronizing Set: inteiro texto classe 
+     Ignoring token: ;
+     Ignoring token: variavel
+     Found syncronizing token: inteiro
+Encountered " ";" "; "" at line 11, column 19.
+Was expecting:
+    "(" ...
+    
+
+*** methodbody ***
+     Syncronizing Set: inteiro texto classe 
+     Ignoring token: ;
+     Ignoring token: construtor
+     Ignoring token: (
+     Found syncronizing token: inteiro
+Encountered " ";" "; "" at line 12, column 28.
+Was expecting:
+    "(" ...
+    
+
+*** methodbody ***
+     Syncronizing Set: inteiro texto classe 
+     Ignoring token: ,
+     Found syncronizing token: inteiro
+Encountered " "," ", "" at line 14, column 29.
+Was expecting:
+    "(" ...
+    
+
+*** methodbody ***
+     Syncronizing Set: inteiro texto classe 
+     Ignoring token: )
+     Ignoring token: {
+     Ignoring token: <IDENT>
+     Ignoring token: =
+     Ignoring token: <IDENT>
+     Ignoring token: ;
+     Ignoring token: <IDENT>
+     Ignoring token: =
+     Ignoring token: <IDENT>
+     Ignoring token: ;
+     Ignoring token: }
+     Ignoring token: vazio
+     Ignoring token: <IDENT>
+     Ignoring token: (
+     Ignoring token: )
+     Ignoring token: {
+     Ignoring token: imprimir
+     Ignoring token: <string_constant>
+     Ignoring token: +
+     Ignoring token: <IDENT>
+     Ignoring token: +
+     Ignoring token: <string_constant>
+     Ignoring token: +
+     Ignoring token: <IDENT>
+     Ignoring token: +
+     Ignoring token: <string_constant>
+     Ignoring token: ;
+     Ignoring token: }
+     Ignoring token: }
+     Found syncronizing token: classe
+Encountered " ")" ") "" at line 14, column 40.
+Was expecting:
+    "(" ...
+    
+
+*** classbody ***
+     Syncronizing Set: classe 
+     Found syncronizing token: classe
+0 Lexical Errors found
+4 Syntactic Errors found

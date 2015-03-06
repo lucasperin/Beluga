@@ -1,0 +1,4 @@
+X++ Compiler - Version 1.0 - 2004
+Reading from file TesteSemErro.blg . . .
+0 Lexical Errors found
+0 Syntactic Errors found
